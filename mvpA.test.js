@@ -89,6 +89,9 @@ describe('Sprint 7 Challenge Codegrade Tests', () => {
       getFormElements()
     })
     test('[6] Successful order with no toppings renders correct message', async () => {
+
+console.log('Before waitFor');
+
       await waitFor(() => {
         fireEvent.change(name, { target: { value: 'Mollusk' } })
         fireEvent.change(size, { target: { value: 'L' } })
